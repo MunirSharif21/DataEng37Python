@@ -49,9 +49,6 @@ characters to be removed. If omitted or
 None, the chars argument defaults to removing
 whitespace.
 
-'www.example.com'.strip('cmowz.')
-'example'
-
 str.count()
 Return the number of non-overlapping occurrences
 of substring sub in the range [start, end].
@@ -72,3 +69,13 @@ of substring old replaced by new. If the optional
 argument count is given, only the first count
 occurrences are replaced.
 """
+
+# F-String (Formatted)
+name = "Lassie"
+years = 7
+height_cm = 60.2
+print(f"{name} is {years * 7} years old in dog years and {height_cm:.2f}cm tall")
+
+score = 16
+max_score = 26
+print(f"You scored {score/max_score:.2%}")
