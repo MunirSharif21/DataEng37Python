@@ -20,17 +20,8 @@ def fizz_buzz(stop):
     print(f'\nFizz: {fizz}\nBuzz: {buzz}\nFizzBuzz: {fizzbuzz}')
 
 
-'''
-while keep_asking:  # while True...
-    stop = input("What number would you like to FizzBuzz up to?\n")
-    if stop.isdigit():  # if the input was a number...
-        fizz_buzz(int(stop) + 1)  # add 1 so fizzbuzz goes up to that number inclusive
-        keep_asking = False  # stop asking for a number if it's an int
-    else:
-        print("Please enter a valid number in digits.")
-'''
-
 play = True
+
 while play:
     stop = input("What number would you like to FizzBuzz up to?\n")  # ask stopping number
     fizz_buzz(int(stop) + 1)  # run fizzbuzz game
