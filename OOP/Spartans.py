@@ -12,7 +12,7 @@ munir = Spartan(
     "Munir",
     "Data Engineering",
     "Data 37",
-    "Home Office"
+    "Home Office"  # variable with default must be at the end
 )
 
 
