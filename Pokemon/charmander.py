@@ -34,12 +34,8 @@ class Charmander(Pokemon):
                 return move.power + self.attack, move.type
 
 
-char = Charmander()
-
-result = char.use_move("Scratch")
-print(result, type(result))
-
-power, move_type = char.use_move("Growl")
-print(power, type(power))
-
-print(move_type, type(move_type))
+if __name__ == "__main__":
+    char = Charmander()
+    print(char.moves)  # show moves for charmander
+    for move in char.moves:
+        print(move)  # show each move nicely

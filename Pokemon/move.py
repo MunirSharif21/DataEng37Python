@@ -4,6 +4,11 @@ class Move:
         self.type = type
         self.power = power
 
+    def __repr__(self):
+        return f"Move(name={self.name}, type={self.type}, power={self.power})"
+
+    def __str__(self):
+        return f"{self.name} ({self.type}): {self.power}"
 
 flamethrower = Move(
     name="Flamethrower",
