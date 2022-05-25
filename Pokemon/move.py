@@ -10,6 +10,7 @@ class Move:
     def __str__(self):
         return f"{self.name} ({self.type}): {self.power}"
 
+
 flamethrower = Move(
     name="Flamethrower",
     type="Fire",
