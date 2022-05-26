@@ -39,4 +39,16 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # Use lambda to create a list of each number squared plus 3
 ans = map(lambda x: (x ** 2) + 3, numbers)
-print(list(ans))
+# print(list(ans))
+
+evens = filter(lambda x: x % 2 == 0, ans)
+print(list(evens))
+# printing list(ans) once will not allow you to do it again
+
+jobs = ["Data Analyst", "C# Developer", "Data Engineer", "DevOps Engineer", "Data Architect"]
+# using map and filter with lambdas
+# produce a list of data based roles
+# without the word data in there
+data_lambda = filter(lambda role: "Data" in role, jobs)  # find roles with data in the name
+data_map = map(lambda title: title.replace("Data ", ""), data_lambda)  # remove the word data
+print(list(data_map))  # print the list
