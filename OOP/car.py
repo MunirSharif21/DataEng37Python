@@ -18,12 +18,6 @@ class Car:
 
     def brake(self, mph):
         self._speed = max(self._speed - mph, 0)
-        '''
-        if self.speed - mph < 0:
-            self.speed = 0
-        else:
-            self.speed -= mph
-        '''
 
     # getter
     def get_speed(self):
