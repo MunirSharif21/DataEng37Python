@@ -1,0 +1,21 @@
+HyperText Internet Protocol
+
+HTTP Request Structure
+
+VERB - URL - Version
+Header - Key-Value Pairs
+Body - Text, JSON, XML
+
+HTTP Response
+Response Code - Version
+Header
+Body
+
+HTTP Verbs
+GET - Reading
+POST - Creating/ Inserting
+PUT - Updating/ Replacing
+PATCH - Modifying
+DELETE - Self explanatory
+
+
