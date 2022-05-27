@@ -14,6 +14,12 @@ class RatesParser:
         with open(filepath) as jsonfile:
             return json.load(jsonfile)
 
+    def to_GBP(self, amount):
+        return amount * self.gbp
+
+    def to_JPY(self, amount):
+        return amount * self.jpy
+
 
 if __name__ == "__main__":
     rp = RatesParser("exchange_rates.json")
